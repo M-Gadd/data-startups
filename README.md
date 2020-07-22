@@ -39,6 +39,7 @@ Then you can open the React frontend at localhost:3000 and the Node API at local
 - Fix misalignment and padding of elements
 - Make the app responisve on screens
 - Choose different color schema
+- Improve types on Typescript
 - Improve pagination logic (on frontend or directly sending pagination requests to the backend)
 - Add materialize pagination style
 - Integrate database to keep track of records
