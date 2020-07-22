@@ -75,7 +75,7 @@ const StartupData: React.SFC<StartupDataProps> = () => {
                     <input
                       className="mx-2"
                       type="number"
-                      style={{ width: "20%" }}
+                      style={{ width: "13%" }}
                       value={startupsPerPage}
                       onChange={(e) => {
                         if (Number(e.target.value) === 0) {
