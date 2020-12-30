@@ -7,7 +7,8 @@ RUN yarn install --no-cache && yarn build && yarn global add serve
 
 #Prepare the server
 WORKDIR /app/server
-RUN npm install --no-cache
+RUN yarn install --no-cache
+RUN yarn add node-pre-gyp
 
 EXPOSE 5000
 
