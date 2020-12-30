@@ -8,5 +8,18 @@ before-install:
 script:
   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ./deploy.sh; fi'
 
+deploy:
+  - provider: elasticbeanstalk
+    region: "eu-west-3"
+    app: "test-deploy-travis"
+    env: "TestDeployTravis-env"
+    bucket_name: "elasticbeanstalk-eu-west-3-969651468995"
+    access_key_id:
+      secure: $AWS_ACCESS_KEY
+    secret_access_key:
+      secure: $AWS_SECRET_KEY
+    on:
+      branch: master
+
 notifications:
   email: false
