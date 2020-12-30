@@ -1,6 +1,6 @@
 FROM node:alpine
 
-COPY . /app
+COPY ./ /app
 #Prepare the client
 WORKDIR /app/client
 RUN yarn install --no-cache && yarn build && yarn global add serve

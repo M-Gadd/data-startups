@@ -3,6 +3,7 @@ language: node_js
 services:
   - docker
 before-install:
+  - docker build -t gd/test-deploy-travis .
   - chmod +x ./deploy.sh
 
 script:
