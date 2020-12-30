@@ -9,7 +9,9 @@ echo $HEROKU_AUTH | docker login --username=_ --password-stdin registry.heroku.c
 
 if [ "${TRAVIS_BRANCH}" = "master" ]; then
 
-  heroku container:push --app=data-startups-react web 
-  heroku container:release --app=data-startups-react web
+  # heroku container:push --app=data-startups-react web 
+  # heroku container:release --app=data-startups-react web
+
+  echo "I am here now --- "
 
 fi
